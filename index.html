@@ -55,9 +55,9 @@
       var loaderUrl = buildUrl + "/myResume.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/myResume.data.br",
-        frameworkUrl: buildUrl + "/myResume.framework.js.br",
-        codeUrl: buildUrl + "/myResume.wasm.br",
+        dataUrl: buildUrl + "/myResume.data",
+        frameworkUrl: buildUrl + "/myResume.framework.js",
+        codeUrl: buildUrl + "/myResume.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "MyResume",
@@ -123,12 +123,5 @@
       document.body.appendChild(script);
 
     </script>
-<script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then(() => console.log('Service Worker registered'))
-        .catch(err => console.error('SW registration failed:', err));
-    }
-  </script>
   </body>
 </html>
